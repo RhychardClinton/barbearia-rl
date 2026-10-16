@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: barbearia-rl
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: COOKIE_SECURE
+        value: "1"

@@ -1,0 +1,12 @@
+{
+  "name": "barbearia-rl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site e sistema de agendamento da Barbearia RL",
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js"
+  }
+}

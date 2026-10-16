@@ -1,0 +1,43 @@
+.admin { background: var(--bg); min-height: 100dvh; }
+.a-wrap { width: min(1100px, 100% - 2rem); margin: 0 auto; padding: 1.2rem 0 4rem; }
+.a-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); margin-bottom: 1.2rem; flex-wrap: wrap; }
+.a-top img { height: 48px; width: auto; }
+.a-top .who { color: var(--muted); font-size: .85rem; display: flex; align-items: center; gap: .8rem; }
+.tabs { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+.tab { background: var(--surface); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: .6rem 1.1rem; cursor: pointer; font: 600 .85rem var(--sans); min-height: 44px; transition: color .2s, border-color .2s; }
+.tab:hover { color: var(--text); }
+.tab[aria-selected="true"] { background: var(--gold); color: var(--gold-ink); border-color: var(--gold); }
+.panel h2 { font-size: 1.6rem; margin-bottom: 1rem; }
+.toolbar { display: flex; gap: .8rem; align-items: end; flex-wrap: wrap; margin-bottom: 1rem; }
+.toolbar .field { margin: 0; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { background: var(--surface); color: var(--muted); border: 0; padding: .7rem 1rem; cursor: pointer; font: 600 .82rem var(--sans); min-height: 44px; }
+.seg button[aria-pressed="true"] { background: #2a2310; color: var(--gold-hi); }
+.a-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem; }
+.appts { list-style: none; margin: 0; padding: 0; display: grid; gap: .7rem; }
+.appt { display: grid; grid-template-columns: 92px 1fr auto; gap: 1rem; align-items: center; }
+.appt time { font-family: var(--serif); font-size: 1.4rem; color: var(--gold-hi); line-height: 1.1; }
+.appt time small { display: block; font: 500 .72rem var(--sans); color: var(--muted); }
+.appt h3 { font-size: 1.05rem; font-family: var(--sans); font-weight: 600; margin-bottom: .15rem; }
+.appt .meta { color: var(--muted); font-size: .88rem; }
+.badge { display: inline-block; font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; padding: .2rem .55rem; border-radius: 999px; border: 1px solid var(--line); margin-left: .5rem; vertical-align: middle; }
+.badge.pendente { color: var(--gold-hi); border-color: var(--line-gold); }
+.badge.confirmado { color: var(--ok); border-color: rgba(126,208,154,.5); }
+.badge.concluido { color: var(--muted); }
+.badge.cancelado { color: var(--danger); border-color: rgba(255,138,122,.5); }
+.actions { display: flex; gap: .4rem; flex-wrap: wrap; justify-content: flex-end; }
+.btn-sm { padding: .55rem .8rem; font-size: .72rem; min-height: 40px; }
+.btn-danger { --b: rgba(255,138,122,.6); color: var(--danger); background: transparent; }
+.btn-danger:hover { background: rgba(255,138,122,.1); }
+.table-wrap { overflow-x: auto; }
+table.t { width: 100%; border-collapse: collapse; min-width: 640px; }
+table.t th, table.t td { text-align: left; padding: .7rem .6rem; border-bottom: 1px solid var(--line); vertical-align: middle; }
+table.t th { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+table.t input[type="text"], table.t input[type="number"], table.t input[type="time"] { width: 100%; min-width: 70px; background: var(--bg); border: 1px solid var(--line); color: var(--text); border-radius: 6px; padding: .55rem .6rem; font: inherit; min-height: 40px; color-scheme: dark; }
+table.t input:focus { border-color: var(--gold); outline: none; }
+.grid-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .8rem; align-items: end; }
+.login { max-width: 420px; margin: 8vh auto; }
+.login img { height: 80px; width: auto; margin: 0 auto 1.2rem; }
+.toast { position: fixed; bottom: 1.2rem; left: 50%; transform: translateX(-50%); background: #1d1a10; border: 1px solid var(--line-gold); padding: .8rem 1.2rem; border-radius: 8px; z-index: 200; max-width: min(520px, 92vw); }
+.toast.bad { border-color: rgba(255,138,122,.6); background: #231412; }
+@media (max-width: 640px) { .appt { grid-template-columns: 1fr; } .actions { justify-content: flex-start; } }

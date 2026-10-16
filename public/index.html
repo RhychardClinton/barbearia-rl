@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia RL — Cortes masculinos e infantis em Guarulhos</title>
+  <meta name="description" content="Barbearia RL em Cidade Soberana, Guarulhos. Cortes masculinos para adultos e crianças, barba e serviços capilares. Agende seu horário online.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="/img/avatar.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="wrap header-row">
+      <a class="brand" href="#inicio" aria-label="Barbearia RL — início">
+        <img src="/img/logo-raw.png" alt="Barbearia RL" width="190" height="104">
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <button class="btn btn-gold nav-cta" type="button" data-open-booking>Agendar horário</button>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Cidade Soberana · Guarulhos</p>
+          <h1>Seu estilo<br>começa <em>aqui.</em></h1>
+          <p class="lead">Precisão nos cortes, cuidado em cada detalhe e o estilo que combina com você.</p>
+          <div class="hero-actions">
+            <button class="btn btn-gold btn-lg" type="button" data-open-booking>Agendar meu horário</button>
+            <a class="btn btn-ghost btn-lg" href="#servicos">Conhecer serviços</a>
+          </div>
+          <ul class="hero-facts" aria-label="Informações rápidas">
+            <li><strong>Ter a Sáb</strong><span>09h às 20h</span></li>
+            <li><strong>Adultos e crianças</strong><span>cortes e barba</span></li>
+            <li><strong>Agende online</strong><span>ou pelo WhatsApp</span></li>
+          </ul>
+        </div>
+        <figure class="hero-photo">
+          <div class="frame">
+            <img src="/img/corte-3.jpg" alt="Cliente de perfil com corte social e barba feita, em atendimento na Barbearia RL" width="281" height="374" fetchpriority="high">
+          </div>
+          <figcaption>Trabalho real da Barbearia RL</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section section-alt" id="diferenciais" aria-labelledby="dif-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Por que a RL</p>
+          <h2 id="dif-title">Cuidado em cada detalhe</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </header>
+        <ul class="features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l12 12M18 3L6 15M4 19a2 2 0 104 0 2 2 0 00-4 0zm12 0a2 2 0 104 0 2 2 0 00-4 0z"/></svg>
+            <h3>Cortes masculinos</h3>
+            <p>Do clássico ao moderno, com acabamento atento e conversa sobre o que combina com você.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 014 4v1a4 4 0 01-8 0V7a4 4 0 014-4zM5 21c0-4 3-7 7-7s7 3 7 7"/></svg>
+            <h3>Adultos e crianças</h3>
+            <p>Especialidade em cortes adultos e infantis, para toda a família.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M6 8v8a6 6 0 0012 0V8M9 4h6"/></svg>
+            <h3>Barba e estética capilar</h3>
+            <p>Barba, sobrancelhas, limpeza de pele, platinado, luzes, progressiva, relaxamento e botox.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            <h3>Agendamento online</h3>
+            <p>Escolha o serviço, o dia e o horário livre em poucos toques, sem fila.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos" aria-labelledby="serv-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Tabela de valores</p>
+          <h2 id="serv-title">Serviços e preços</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </header>
+        <ul class="services" id="servicesList" aria-live="polite">
+          <li class="muted">Carregando serviços…</li>
+        </ul>
+        <p class="fine">Valores “a partir de” podem variar conforme o procedimento e o cabelo. O valor final é combinado no atendimento.</p>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section section-alt" id="galeria" aria-labelledby="gal-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Nosso trabalho</p>
+          <h2 id="gal-title">Galeria</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </header>
+        <ul class="gallery" id="gallery"></ul>
+        <p class="fine"><a class="link" href="https://www.instagram.com/rl_barbeariasb/" target="_blank" rel="noopener">Veja mais cortes no Instagram @rl_barbeariasb</a></p>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">Sobre a barbearia</p>
+          <h2 id="sobre-title">Barbearia RL</h2>
+          <div class="ornament left" aria-hidden="true"><span></span><i></i><span></span></div>
+        </div>
+        <div class="about-text">
+          <p>A Barbearia RL fica em Cidade Soberana, em Guarulhos, e atende homens e crianças com cortes bem executados, barba alinhada e serviços estéticos capilares.</p>
+          <p>Aqui o atendimento é feito com atenção ao que você pede e ao que valoriza o seu rosto, do corte do dia a dia ao visual mais ousado, como platinado e luzes.</p>
+          <p>Prefere conversar antes? Chame no WhatsApp ou acompanhe os trabalhos no Instagram.</p>
+          <div class="hero-actions">
+            <button class="btn btn-gold" type="button" data-open-booking>Agendar horário</button>
+            <a class="btn btn-ghost" href="https://www.instagram.com/rl_barbeariasb/" target="_blank" rel="noopener">@rl_barbeariasb</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section-alt" id="contato" aria-labelledby="cont-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Venha nos visitar</p>
+          <h2 id="cont-title">Localização e contato</h2>
+          <div class="ornament" aria-hidden="true"><span></span><i></i><span></span></div>
+        </header>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Endereço</h3>
+            <address>Rua Palmeira, 242<br>Cidade Soberana<br>Guarulhos – SP</address>
+            <a class="btn btn-gold" id="mapBtn" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Palmeira+242+Cidade+Soberana+Guarulhos+SP" target="_blank" rel="noopener">Abrir no mapa</a>
+          </div>
+          <div class="card">
+            <h3>Horário de funcionamento</h3>
+            <table class="hours" id="hoursTable">
+              <tbody>
+                <tr><th>Terça a sábado</th><td>09h às 20h</td></tr>
+                <tr><th>Domingo e segunda</th><td>Fechado</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h3>Fale com a gente</h3>
+            <ul class="contact-list">
+              <li><a class="link" href="https://wa.me/5511958942233" target="_blank" rel="noopener" data-wa>WhatsApp · (11) 95894-2233</a></li>
+              <li><a class="link" href="https://wa.me/5511989990929" target="_blank" rel="noopener" data-wa>WhatsApp · (11) 98999-0929</a></li>
+              <li><a class="link" href="https://www.instagram.com/rl_barbeariasb/" target="_blank" rel="noopener">Instagram · @rl_barbeariasb</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <img src="/img/logo-raw.png" alt="Barbearia RL" width="190" height="104">
+        <p class="fine">Cortes masculinos e infantis, barba e serviços estéticos capilares.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h3>Navegação</h3>
+        <a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+      </nav>
+      <div>
+        <h3>Contato</h3>
+        <p>Rua Palmeira, 242<br>Cidade Soberana, Guarulhos – SP</p>
+        <p>(11) 95894-2233<br>(11) 98999-0929</p>
+        <p><a href="https://www.instagram.com/rl_barbeariasb/" target="_blank" rel="noopener">@rl_barbeariasb</a></p>
+      </div>
+      <div>
+        <h3>Funcionamento</h3>
+        <p>Terça a sábado<br>09h às 20h</p>
+        <p class="fine">Domingo e segunda: fechado</p>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <p>© <span id="year"></span> Barbearia RL. Dados informados no agendamento (nome e WhatsApp) são usados apenas para gerenciar seu horário.</p>
+    </div>
+  </footer>
+
+  <!-- AGENDAMENTO -->
+  <dialog class="booking" id="bookingDialog" aria-labelledby="bkTitle">
+    <div class="bk-shell">
+      <header class="bk-head">
+        <div>
+          <p class="eyebrow" id="bkStepLabel">Passo 1 de 4</p>
+          <h2 id="bkTitle">Agendar horário</h2>
+        </div>
+        <button class="icon-btn" type="button" id="bkClose" aria-label="Fechar agendamento">✕</button>
+      </header>
+      <div class="bk-progress" aria-hidden="true"><span id="bkBar"></span></div>
+      <div class="bk-body" id="bkBody" aria-live="polite"></div>
+      <footer class="bk-foot" id="bkFoot"></footer>
+    </div>
+  </dialog>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
