@@ -1,8 +1,8 @@
 // Barbearia RL — site público e fluxo de agendamento.
 const CONTACT = {
   // WhatsApp que recebe a mensagem pré-preenchida após o agendamento (somente dígitos, com 55).
-  whatsapp: '5511958942233',
-  whatsappLabel: '(11) 95894-2233',
+  whatsapp: '5511989990929',
+  whatsappLabel: '(11) 98999-0929',
 };
 
 const $ = (s, r = document) => r.querySelector(s);
